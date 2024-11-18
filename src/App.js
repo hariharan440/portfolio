@@ -7,10 +7,9 @@ import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Skills from './components/Skills';
 import Work from './components/Work';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import UnderConstruction from './components/UnderConstruction';
 import ProjectDetails from './components/ProjectDetails';
-import PageNotFound from './PageNotFound';
 
 function App() {
   return (
@@ -31,7 +30,6 @@ function App() {
         />
           <Route path="/project/:id" element={<ProjectDetails />} />
           <Route path="/Site-under-construction" element={<UnderConstruction />} />
-          <Route component={PageNotFound} />
         </Routes>
       </div>
     </Router>
