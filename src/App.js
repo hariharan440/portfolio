@@ -7,7 +7,7 @@ import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Skills from './components/Skills';
 import Work from './components/Work';
-import { BrowserRouter as Router, Routes, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import UnderConstruction from './components/UnderConstruction';
 import ProjectDetails from './components/ProjectDetails';
 import PageNotFound from './PageNotFound';
