@@ -40,7 +40,7 @@ const Hero = () => {
 
                 <div className='flex flex-col sm:flex-row items-center gap-4'>
                     <a
-                        href='https://drive.google.com/file/d/1pD0IGqmyVfsdxIC2cFMEISUQc3VGKM5c/view?usp=sharing'
+                        href='https://drive.google.com/file/d/1B93n3s4MlT7sC7f_ElfhNpAjkIFKnuAY/view?usp=sharing'
                         target="_blank"
                         rel="noreferrer"
                         className='px-4 py-2 w-[200px] sm:w-auto rounded-xl bg-gradient-to-br from-orange-500 to-pink-500 text-white'
