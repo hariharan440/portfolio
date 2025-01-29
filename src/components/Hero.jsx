@@ -1,5 +1,5 @@
 import React from 'react';
-import heroimage from '../assets/hero.png';
+import heroimage from '../assets/profile.png';
 import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
@@ -27,6 +27,8 @@ const Hero = () => {
                             1000,
                             "Programmer",
                             1000,
+                            "MERN Stack Dev",
+                            1000,
                         ]}
                         wrapper='span'
                         speed={50}
@@ -43,13 +45,13 @@ const Hero = () => {
                         href='https://drive.google.com/file/d/1B93n3s4MlT7sC7f_ElfhNpAjkIFKnuAY/view?usp=sharing'
                         target="_blank"
                         rel="noreferrer"
-                        className='px-4 py-2 w-[200px] sm:w-auto rounded-xl bg-gradient-to-br from-orange-500 to-pink-500 text-white'
+                        className='px-4 py-2 w-[200px] sm:w-auto rounded-xl bg-gradient-to-br from-[#3F2B96] to-[#FFFFFF] text-black'
                     >
                         Download CV
                     </a>
                     <button
                         onClick={() => scrollToSection('contact')}
-                        className='px-4 py-2 w-[200px] sm:w-auto rounded-xl border border-gray-400 hover:bg-gradient-to-br from-orange-500 to-pink-500 text-white hover:border-none'
+                        className='px-4 py-2 w-[200px] sm:w-auto rounded-xl border border-gray-400 hover:bg-gradient-to-br from-[#3F2B96] to-[#FFFFFF] text-white hover:border-none hover:text-black'
                     >
                         Contact
                     </button>
