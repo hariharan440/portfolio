@@ -70,7 +70,7 @@ const Skills = () => {
 
       <div className='flex flex-col items-center m-4 sm:my-0 w-[80px] md:w-[100px]'>
         <img src={postmon} alt="" width={100} height={100} />
-        <p className='mt-2'>Postmon</p>
+        <p className='mt-2'>Postman</p>
       </div>
 
       <div className='flex flex-col items-center m-4 sm:my-0 w-[80px] md:w-[100px]'>
