@@ -34,7 +34,7 @@ const Skills = () => {
       </div>
 
       <div className='flex flex-col items-center m-4 sm:my-0 w-[80px] md:w-[100px]'>
-        <img src={javascript} alt="" width={100} height={100} />
+        <img src={javascript} alt="" width={100} height={100} className='rounded-lg'/>
         <p className='mt-2'>javascript</p>
       </div>
 

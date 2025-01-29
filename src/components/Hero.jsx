@@ -1,5 +1,5 @@
 import React from 'react';
-import heroimage from '../assets/profilepic7.png';
+import heroimage from '../assets/hero.png';
 import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
