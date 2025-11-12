@@ -7,6 +7,7 @@ import tailwind from '../assets/tailwind.png'
 import next from '../assets/next3.webp'
 import react from '../assets/react.png'
 import node from '../assets/nodejs.png'
+import python from "../assets/Python.png"
 import git from '../assets/git.png'
 import mysql from '../assets/mysql1.png'
 import mongo from '../assets/mongo.webp'
@@ -81,6 +82,12 @@ const Skills = () => {
           <div className="flex flex-col items-center">
             <img src={node} alt="Node.js" className="w-16 md:w-20" />
             <p className="mt-3 text-sm md:text-base font-medium">Node.js</p>
+          </div>
+
+          {/* Python */}
+          <div className="flex flex-col items-center">
+            <img src={python} alt="Node.js" className="w-16 md:w-20" />
+            <p className="mt-3 text-sm md:text-base font-medium">Python</p>
           </div>
 
           {/* MySQL */}
