@@ -11,7 +11,8 @@ import landing from "../assets/proj2.png";
 import hotel from "../assets/hotel.png";
 import hotel1 from "../assets/proj4.png";
 import hotel2 from "../assets/hotel2.png";
-import react from "../assets/react.png";  
+import react from "../assets/react.png"; 
+import next from '../assets/next3.webp' 
 import tailwind from "../assets/tailwind.png";
 // import nodeIcon from "../assets/nodejs.png";
 import html from "../assets/html.png";
@@ -20,6 +21,8 @@ import boot from "../assets/bootstp.png";
 import js from "../assets/javascript.png";
 // import mongoIcon from "../assets/mongo.webp";
 import api from "../assets/api.png";
+import terraze1 from "../assets/terraze1.png"
+import terraze2 from "../assets/terraze2.png"
 import PageNotFound from '../PageNotFound';
 
 const projects = [
@@ -41,11 +44,11 @@ const projects = [
     },
     {
         id: 3,
-        title: 'Roriri Software Solutions',
-        description: 'Roriri Soft specializes in offering comprehensive software development services, focusing on customized solutions for businesses. They provide expertise in areas like web and mobile app development, cloud services, and IT consulting. The company aims to deliver innovative and efficient software solutions tailored to client needs, ensuring scalability and performance optimization. Additionally, they emphasize a collaborative approach, working closely with clients to meet their business objectives.',
-        images: [roriri, roriri1],  
-        technologies: [html, css, boot],
-        demoLink: 'https://roririsoft.com',  
+        title: 'Terraze: Intelligent AI Agents & Workflow Automation',
+        description: 'Terraze specializes in empowering businesses with next-generation AI-driven automation solutions. Their platform supports seamless workflow automation, intelligent call-handling, and lead-capture services, tailored for real-estate, sales and customer-support teams. With a focus on scalability, integration and productivity enhancement, Terraze collaborates closely with clients to understand their processes and deliver customised automation that drives efficiency and growth.',
+        images: [terraze1, terraze2],  
+        technologies: [next, tailwind, api, js],
+        demoLink: 'https://terraze.net',  
     },
     {
         id: 4,

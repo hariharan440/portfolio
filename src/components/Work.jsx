@@ -5,7 +5,7 @@ import proj3 from "../assets/nexgen.png";
 import proj4 from "../assets/proj4.png";
 import proj5 from "../assets/proj5.png";
 import proj6 from "../assets/roriri.png";
-import proj7 from "../assets/infosmite.png";
+import proj7 from "../assets/terraze1.png";
 import proj8 from "../assets/tarvelx.png";
 import { Link } from "react-router-dom";
 
@@ -27,8 +27,8 @@ const projects = [
   {
     id: 3,
     image: proj7,
-    title: "InfoSmite",
-    link: "/site-under-construction",
+    title: "Terraze",
+    link: "/project/3",
     type: "internal",
   },
   {
