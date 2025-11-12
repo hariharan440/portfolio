@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.ffdbf6ed.css",
-    "main.js": "/portfolio/static/js/main.24566aec.js",
+    "main.js": "/portfolio/static/js/main.5d9a8184.js",
     "static/media/nexgen.png": "/portfolio/static/media/nexgen.cc1e970083b9c6466a3d.png",
     "static/media/tarvelx.png": "/portfolio/static/media/tarvelx.cce201d9629eb552835c.png",
     "static/media/proj4.png": "/portfolio/static/media/proj4.f68c04aef31bb697780d.png",
@@ -20,6 +20,7 @@
     "static/media/rorori1.png": "/portfolio/static/media/rorori1.451b6187a6b058597688.png",
     "static/media/about.jpg": "/portfolio/static/media/about.b35efd35d484b28007b7.jpg",
     "static/media/roriri.png": "/portfolio/static/media/roriri.00de635ac404e9796bb1.png",
+    "static/media/Python.png": "/portfolio/static/media/Python.4f6beb692d6414d14c6d.png",
     "static/media/bootstp.png": "/portfolio/static/media/bootstp.5cef5ebee631003fc48f.png",
     "static/media/terraze2.png": "/portfolio/static/media/terraze2.473e442c96bb9cc0f284.png",
     "static/media/swagger.png": "/portfolio/static/media/swagger.dafba1fc9de14f5fc28b.png",
@@ -38,10 +39,10 @@
     "static/media/mongo.webp": "/portfolio/static/media/mongo.0538886990cb9985b699.webp",
     "index.html": "/portfolio/index.html",
     "main.ffdbf6ed.css.map": "/portfolio/static/css/main.ffdbf6ed.css.map",
-    "main.24566aec.js.map": "/portfolio/static/js/main.24566aec.js.map"
+    "main.5d9a8184.js.map": "/portfolio/static/js/main.5d9a8184.js.map"
   },
   "entrypoints": [
     "static/css/main.ffdbf6ed.css",
-    "static/js/main.24566aec.js"
+    "static/js/main.5d9a8184.js"
   ]
 }
