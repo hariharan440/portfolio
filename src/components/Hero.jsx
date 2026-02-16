@@ -23,11 +23,11 @@ const Hero = () => {
                         sequence={[
                             "Frontend Dev",
                             1000,
-                            "UX/UI designer",
+                            "Full Stack Engineer",
                             1000,
-                            "Programmer",
+                            "AI Agent Builder",
                             1000,
-                            "MERN Stack Dev",
+                            "AI Automation Engineer",
                             1000,
                         ]}
                         wrapper='span'
@@ -42,7 +42,7 @@ const Hero = () => {
 
                 <div className='flex flex-col sm:flex-row items-center gap-4'>
                     <a
-                        href='https://drive.google.com/file/d/1B93n3s4MlT7sC7f_ElfhNpAjkIFKnuAY/view?usp=sharing'
+                        href='https://drive.google.com/file/d/1Yzf7vCuino13gUSObZxZNhIVEkXPf7FP/view?usp=sharing'
                         target="_blank"
                         rel="noreferrer"
                         className='px-4 py-2 w-[200px] sm:w-auto rounded-xl bg-gradient-to-br from-[#3F2B96] to-[#FFFFFF] text-black'

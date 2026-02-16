@@ -12,14 +12,12 @@ const About = () => {
           <div className='my-auto mx-6'>
             <h2 className='text-4xl font-bold mb-4 primary-color'>About Me</h2>
             <p className='text-base lg:text-lg'>
-              To work in an environment where I can implement my professional
-              skillset for the successful growth of the company and gain quality
-              experience to improve my career strength.
+              Full Stack Developer and AI Automation Engineer focused on building intelligent systems that streamline workflows and enhance user experience. I combine clean code, product thinking, and AI integration to create impactful solutions.
             </p>
           </div>
         </div>
 
-        <img className='mx-auto rounded-3xl py-8 md:py-0' src={aboutImg} width={300} height={300} alt='aboutimg'/>
+        <img className='mx-auto rounded-3xl py-8 md:py-0' src={aboutImg} width={300} height={300} alt='aboutimg' />
 
       </div>
     </div>
