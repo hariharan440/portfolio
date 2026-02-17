@@ -17,7 +17,7 @@ const Hero = () => {
             </div>
 
             <div className='sm:ml-28 text-center sm:text-left'>
-                <h1 className='text-white text-4xl sm:text-5xl lg:text-7xl font-extrabold'>
+                <h1 className='text-white text-2xl sm:text-3xl lg:text-5xl font-extrabold'>
                     <span className='primary-color'>I'm a</span> <br />
                     <TypeAnimation
                         sequence={[
@@ -37,7 +37,7 @@ const Hero = () => {
                 </h1>
 
                 <p className='text-white sm:text-lg my-6 lg:text-xl max-w-[350px] sm:max-w-none'>
-                    My name is Hariharan and I have 1+ years in Web/App development.
+                    My name is Hariharan, and I have 2+ years of personal experience in web development.
                 </p>
 
                 <div className='flex flex-col sm:flex-row items-center gap-4'>

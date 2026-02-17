@@ -21,21 +21,21 @@ const Contact = () => {
                     <div>
                         <div class="mt-2.5">
                             <input type="name" name="name" id="" placeholder="Your Name"
-                                class="bg-[#161616] w-full px-4 py-4 text-gray-400 placeholder-gray-400 border border-gray-700 rounded-md focus:outline-none focus:border-pink-600" />
+                                class="bg-[#161616] w-full px-4 py-4 text-gray-400 placeholder-gray-400 border border-gray-700 rounded-md focus:outline-none focus:border-[#3F2B96]" />
                         </div>
                         </div>  
 
                       <div>
                         <div class="mt-2.5">
                             <input type='email' name="email" id='' placeholder='Your Email'
-                            class="bg-[#161616] w-full px-4 py-4 text-gray-400 placeholder-gray-400 border border-gray-700 rounded-md focus:outline-none focus:border-pink-600" />
+                            class="bg-[#161616] w-full px-4 py-4 text-gray-400 placeholder-gray-400 border border-gray-700 rounded-md focus:outline-none focus:border-[#3F2B96]" />
                         </div>
                       </div> 
 
                       <div class="sm:col-span-2">
                         <div class="mt-2.5">
                             <textarea type="message" name="message" id='' placeholder='Your Message'
-                            class="bg-[#161616] w-full px-4 py-4 text-gray-400 placeholder-gray-400 border border-gray-700 rounded-md focus:outline-none focus:border-pink-600" />
+                            class="bg-[#161616] w-full px-4 py-4 text-gray-400 placeholder-gray-400 border border-gray-700 rounded-md focus:outline-none focus:border-[#3F2B96]" />
                         </div>
                       </div> 
 

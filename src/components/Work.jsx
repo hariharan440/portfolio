@@ -10,12 +10,12 @@ import proj8 from "../assets/tarvelx.png";
 import { Link } from "react-router-dom";
 
 const projects = [
-  {
+    {
     id: 1,
-    image: proj3,
-    title: "Nexgen IT Academy",
-    link: "/project/1",
-    type: "internal", // Mark as internal for Link
+    image: proj7,
+    title: "Terraze",
+    link: "/project/3",
+    type: "internal",
   },
   {
     id: 2,
@@ -26,10 +26,10 @@ const projects = [
   },
   {
     id: 3,
-    image: proj7,
-    title: "Terraze",
-    link: "/project/3",
-    type: "internal",
+    image: proj3,
+    title: "Nexgen IT Academy",
+    link: "/project/1",
+    type: "internal", // Mark as internal for Link
   },
   {
     id: 4,
