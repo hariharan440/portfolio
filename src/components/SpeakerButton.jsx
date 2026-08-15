@@ -59,27 +59,34 @@ const SpeakerButton = ({ text }) => {
 
       // Order of preference for clear male voices
       const preferredVoiceNames = [
-        'Google UK English Male', // Chrome UK Male
-        'Microsoft Guy Online (Natural) - English (United States)', // Edge Neural Male
-        'Microsoft David Desktop - English (United States)', // Windows standard male (very clear)
-        'Microsoft David', // Windows male
-        'Microsoft Mark Desktop - English (United States)', // Windows male
-        'Daniel', // macOS UK Male
-        'Alex', // macOS clear male
-        'Fred' // macOS male
+        'Google UK English Male',
+        'Google US English Male',
+        'Microsoft Guy Online',
+        'Microsoft David',
+        'Microsoft Mark',
+        'Microsoft Ryan',
+        'Daniel',
+        'Alex',
+        'Fred',
+        'Oliver',
+        'James',
+        'Arthur'
       ];
 
       let selectedVoice = null;
       
       // 1. Try to find the explicitly listed male voices first
       for (const name of preferredVoiceNames) {
-        selectedVoice = voices.find(v => v.name === name || v.name.includes(name));
+        selectedVoice = voices.find(v => v.name.includes(name));
         if (selectedVoice) break;
       }
 
-      // 2. Fallback to any voice explicitly labeled "Male"
+      // 2. Fallback to any voice explicitly labeled "Male" or common male names
       if (!selectedVoice) {
-        selectedVoice = voices.find(v => v.name.toLowerCase().includes('male') && v.lang.includes('en'));
+        selectedVoice = voices.find(v => {
+          const lowerName = v.name.toLowerCase();
+          return (lowerName.includes('male') || lowerName.includes('david') || lowerName.includes('mark') || lowerName.includes('daniel') || lowerName.includes('guy')) && v.lang.includes('en');
+        });
       }
 
       // 3. Fallback to any clear standard English voice if no explicitly male voice is found
@@ -91,12 +98,11 @@ const SpeakerButton = ({ text }) => {
         utterance.voice = selectedVoice;
       }
       
-      // Explicitly set language to UK English for sharper consonant articulation
-      utterance.lang = selectedVoice ? selectedVoice.lang : 'en-GB';
+      utterance.lang = selectedVoice ? selectedVoice.lang : 'en-US';
 
-      // Fine-tuning parameters for maximum clarity on basic engines:
-      utterance.rate = 0.85; 
-      utterance.pitch = 1.1;
+      // Fine-tuning parameters for maximum clarity and a masculine tone:
+      utterance.rate = 0.9; 
+      utterance.pitch = 0.7; // Lower pitch gives a much deeper, male-like sound
       utterance.volume = 1.0;
       
       utterance.onend = () => setIsPlaying(false);
