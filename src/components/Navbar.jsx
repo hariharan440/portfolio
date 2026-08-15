@@ -15,12 +15,12 @@ const Navbar = () => {
     };
 
     const menuStyles = {
-        open: 'z-10 fixed h-full left-0 top-0 w-[60%] bg-[#202121] ease-in-out duration-500',
-        closed: 'fixed left-[-100%]'
+        open: 'z-[99] fixed h-full left-0 top-0 w-[60%] bg-[#202121] ease-in-out duration-500',
+        closed: 'fixed left-[-100%] z-[99]'
     };
 
     return (
-        <div className="bg-black text-gray-400 h-20 max-w-7xl mx-auto flex justify-between items-center font-sans relative">
+        <div className="bg-black text-gray-400 h-20 max-w-7xl mx-auto flex justify-between items-center font-sans relative z-50">
             {/* Logo */}
             <h1 className="text-3xl font-bold primary-color ml-4">Hariharan A</h1>
 
@@ -28,6 +28,12 @@ const Navbar = () => {
             <ul className="hidden md:flex">
                 <li className="p-5">
                     <button onClick={() => scrollToSection('about')}>About</button>
+                </li>
+                <li className="p-5">
+                    <button onClick={() => scrollToSection('experience')}>Experience</button>
+                </li>
+                <li className="p-5">
+                    <button onClick={() => scrollToSection('certificates')}>Certificates</button>
                 </li>
                 <li className="p-5">
                     <button onClick={() => scrollToSection('work')}>Work</button>
@@ -38,7 +44,7 @@ const Navbar = () => {
             </ul>
 
             {/* Mobile Menu Toggle */}
-            <div onClick={handleNav} className="block md:hidden mr-6">
+            <div onClick={handleNav} className="block md:hidden mr-6 z-[100] relative cursor-pointer">
                 {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
             </div>
 
@@ -48,6 +54,12 @@ const Navbar = () => {
                 <ul className="p-8 text-2xl">
                     <li className="p-2">
                         <button onClick={() => scrollToSection('about')}>About</button>
+                    </li>
+                    <li className="p-2">
+                        <button onClick={() => scrollToSection('experience')}>Experience</button>
+                    </li>
+                    <li className="p-2">
+                        <button onClick={() => scrollToSection('certificates')}>Certificates</button>
                     </li>
                     <li className="p-2">
                         <button onClick={() => scrollToSection('work')}>Work</button>

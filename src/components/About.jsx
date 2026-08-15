@@ -1,6 +1,7 @@
 //About
 import React from 'react';
 import aboutImg from '../assets/about.jpg';
+import SpeakerButton from './SpeakerButton';
 
 const About = () => {
   return (
@@ -10,10 +11,19 @@ const About = () => {
 
         <div className='mt-4 md:mt-0 text-left flex'>
           <div className='my-auto mx-6'>
-            <h2 className='text-4xl font-bold mb-4 primary-color'>About Me</h2>
+            <div className="flex items-center gap-4 mb-4">
+              <h2 className='text-4xl font-bold primary-color'>About Me</h2>
+              <SpeakerButton text="I am a Full-Stack Developer with strong system design fundamentals and experience building scalable, real-time architectures. I use AI extensively throughout the development lifecycle for rapid problem-solving, efficient debugging, and delivering high-quality products. I am currently exploring AI Agents, Voice AI, and real-time reliable tool calling." />
+            </div>
             <p className='text-base lg:text-lg'>
-              Full Stack Developer and AI Automation Engineer focused on building intelligent systems that streamline workflows and enhance user experience. I combine clean code, product thinking, and AI integration to create impactful solutions.
+              Full-Stack Developer with strong system design fundamentals and experience building scalable, real-time architectures. I use AI extensively throughout the development lifecycle—leveraging tools like Claude, Cursor, and Antigravity—for rapid problem-solving, efficient debugging, and delivering high-quality products.
             </p>
+            <div className='mt-6'>
+              <h3 className='text-sm font-semibold text-gray-400 uppercase tracking-wider mb-2'>Currently Exploring</h3>
+              <p className='text-sm text-gray-300'>
+                AI Agents &middot; Voice AI &middot; Real-time Systems &middot; Reliable Tool Calling &middot; Multilingual Conversations
+              </p>
+            </div>
           </div>
         </div>
 
