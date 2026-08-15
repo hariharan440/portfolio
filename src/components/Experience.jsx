@@ -50,7 +50,7 @@ const Experience = () => {
   return (
     <div className='max-w-[1200px] mx-auto p-5 font-sans my-12' id='experience'>
       <div className='pb-8'>
-        <p className='text-4xl mb-3 font-bold primary-color'>Experience</p>
+        <p className='text-3xl md:text-4xl mb-3 font-bold primary-color'>Experience</p>
         <p className='text-gray-400'>My professional journey</p>
       </div>
       <div className='flex flex-col gap-6'>
@@ -65,7 +65,7 @@ const Experience = () => {
               >
                 <div>
                   <div className="flex items-center gap-4">
-                    <h3 className='text-2xl md:text-3xl font-bold text-gray-100 group-hover:text-white transition-colors duration-300 tracking-wide'>{exp.company}</h3>
+                    <h3 className='text-xl md:text-3xl font-bold text-gray-100 group-hover:text-white transition-colors duration-300 tracking-wide'>{exp.company}</h3>
                     <SpeakerButton text={`At ${exp.company}, working as ${exp.role}. ${exp.overview}`} />
                   </div>
                   <p className='text-lg text-gray-400 font-medium mt-1'>{exp.role}</p>
