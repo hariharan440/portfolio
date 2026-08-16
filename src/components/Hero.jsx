@@ -46,7 +46,7 @@ const Hero = () => {
 
                 <div className='flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mt-6 md:mt-4'>
                     <a
-                        href='https://drive.google.com/file/d/1Trnahmz7rRSCp3xT8ojgL80bbu7xroGX/view?usp=sharing'
+                        href='https://drive.google.com/file/d/1M7sAunQEvtekWPTzb1x_-elFlNRWUPlZ/view?usp=sharing'
                         target="_blank"
                         rel="noreferrer"
                         className='group relative px-6 py-3 md:px-8 md:py-4 w-full sm:w-auto rounded-full bg-gradient-to-r from-[#3F2B96] to-purple-600 text-white font-bold text-base md:text-lg overflow-hidden transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.4)]'
