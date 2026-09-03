@@ -16,7 +16,7 @@ const experiences = [
     id: 2,
     company: "Terraze",
     role: "Software developer",
-    timeline: "May - Apr 2025",
+    timeline: "May 2025 - Apr 2026",
     overview: "Developed AI applications and automation workflows, contributing to product architecture, frontend development, and CRM workflows for lead management, customer interactions, and business automation.",
     details: [
       "Worked on a voice agent using AI libraries, orchestration layers, and finite-state architecture for reliable conversational workflows.",
