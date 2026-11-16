@@ -11,12 +11,26 @@ const skillCategories = [
     skills: ["Node.js", "Express.js", "REST APIs", "PostgreSQL", "MongoDB", "MySQL", "Prisma"]
   },
   {
+    title: "IT & Business Operations",
+    skills: [
+      "ERP & CRM Systems",
+      "Business Process Management",
+      "Application Support",
+      "Data Management",
+      "Data Validation",
+      "Report Generation",
+      "Ticket Management",
+      "Documentation",
+      "Client & Vendor Coordination"
+    ]
+  },
+  {
     title: "AI & Automation",
     skills: ["Gemini", "AI Agents", "AI Automation", "Tool Calling"]
   },
   {
     title: "AI-Powered Dev Tools",
-    skills: ["Claude", "Antigravity", "Cursor"]
+    skills: ["Claude", "Antigravity", "CodeX"]
   },
   {
     title: "Voice AI",
@@ -33,7 +47,7 @@ const Skills = () => {
     <div className="bg-black font-sans text-gray-300 py-16" id="skills">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-gray-700 text-3xl md:text-4xl font-bold text-center mb-12">
-          My <span className="primary-color">Tech</span> Stack
+          <span className="primary-color">Technical Skills and Core Competencies</span>
         </h2>
 
         <div className="space-y-10">

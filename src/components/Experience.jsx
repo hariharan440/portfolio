@@ -6,7 +6,7 @@ const experiences = [
     id: 1,
     company: "Bhumaha Solutions Private Limited",
     role: "Software developer",
-    timeline: "Apr 2026 - Present",
+    timeline: "Apr 2026 - Nov 2026",
     overview: "Developed and architected full-stack modules for an ERP product, integrating APIs, optimizing scalability and performance, and implementing AI-powered business workflows.",
     details: [
       "Leveraged AI-assisted development and coding tools for architecture design, rapid implementation, unit testing, debugging, and optimization, reducing development time while maintaining code quality and reliability."

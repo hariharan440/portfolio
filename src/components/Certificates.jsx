@@ -35,30 +35,38 @@ const certificates = [
 
 const Certificates = () => {
   return (
-    <div className='max-w-[1200px] mx-auto p-5 font-sans my-12' id='certificates'>
-      <div className='pb-8'>
-        <p className='text-4xl mb-3 font-bold primary-color'>Certificates</p>
-        <p className='text-gray-400'>Workshops, seminars, and courses</p>
+    <div className='max-w-[1200px] mx-auto px-4 sm:px-6 font-sans my-10 md:my-14' id='certificates'>
+      <div className='mb-6 sm:mb-8'>
+        <p className='text-3xl sm:text-4xl mb-2 font-bold primary-color'>Certificates</p>
+        <p className='text-gray-400 text-sm sm:text-base'>Workshops, seminars, and courses</p>
       </div>
-      <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-6'>
+
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4'>
         {certificates.map((cert) => (
-          <div key={cert.id} className='group relative bg-gradient-to-br from-[#161616] to-[#0a0a0a] border border-gray-800/80 rounded-2xl p-6 hover:-translate-y-2 hover:border-[#3F2B96]/50 hover:shadow-[0_10px_30px_rgba(63,43,150,0.15)] transition-all duration-500 flex flex-col justify-between overflow-hidden'>
-            <div className="absolute -right-10 -top-10 w-32 h-32 bg-[#3F2B96] rounded-full opacity-0 group-hover:opacity-20 blur-[40px] transition-opacity duration-700 pointer-events-none"></div>
-            
-            <div className="relative z-10 flex flex-col h-full">
-              <div className="w-12 h-12 rounded-xl bg-[#1e1e1e] border border-gray-700/50 flex items-center justify-center mb-6 group-hover:border-[#3F2B96]/50 group-hover:bg-[#3F2B96]/10 transition-all duration-300 shadow-sm">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-gray-400 group-hover:text-[#3F2B96] transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+          <div 
+            key={cert.id} 
+            className='group relative bg-gradient-to-r from-[#141414] to-[#0d0d0d] border border-gray-800/80 rounded-xl p-3.5 sm:p-4 hover:border-[#3F2B96]/60 hover:shadow-[0_4px_20px_rgba(63,43,150,0.12)] transition-all duration-300 flex items-center justify-between gap-3 overflow-hidden'
+          >
+            <div className="absolute top-0 right-0 w-24 h-24 bg-[#3F2B96] rounded-full opacity-0 group-hover:opacity-10 blur-[30px] transition-opacity duration-500 pointer-events-none"></div>
+
+            <div className='relative z-10 flex items-center gap-3 min-w-0 flex-1'>
+              <div className='w-9 h-9 rounded-lg bg-[#1c1c1c] border border-gray-700/60 flex items-center justify-center shrink-0 text-gray-400 group-hover:text-purple-400 group-hover:border-purple-500/50 group-hover:bg-purple-950/20 transition-all shadow-sm'>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <h3 className='text-lg font-bold text-gray-200 group-hover:text-white transition-colors leading-snug mb-6 flex-grow'>{cert.title}</h3>
-              
-              <div className='flex items-center gap-2 pt-4 border-t border-gray-800/50'>
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-[#3F2B96]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-                <span className='text-gray-400 font-semibold text-sm tracking-wide'>{cert.date}</span>
-              </div>
+              <h3 className='text-sm sm:text-base font-semibold text-gray-200 group-hover:text-white transition-colors leading-snug truncate'>
+                {cert.title}
+              </h3>
+            </div>
+
+            <div className='relative z-10 flex items-center gap-1.5 shrink-0 bg-[#181818] px-2.5 py-1 rounded-md border border-gray-800/80'>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <span className='text-gray-400 font-mono text-xs font-medium tracking-tight'>
+                {cert.date}
+              </span>
             </div>
           </div>
         ))}

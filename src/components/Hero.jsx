@@ -18,10 +18,12 @@ const Hero = () => {
 
             <div className='flex flex-col z-10 text-center md:text-left mt-8 md:mt-0 w-full md:w-3/5'>
                 <p className='text-gray-400 text-base md:text-xl font-medium tracking-wide mb-2 md:mb-3 uppercase'>
-                    Hello, I'm <span className="text-white font-bold">Hariharan A</span>
+                    👋 Hello, I'm <span className="text-white font-bold">Hariharan A</span>
                 </p>
                 <h1 className='text-white text-3xl sm:text-5xl lg:text-7xl font-extrabold leading-tight tracking-tight mb-4'>
-                    <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#3F2B96] to-[#a855f7]'>I build</span> <br />
+                    <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#3F2B96] to-[#a855f7]'>
+                        I work across
+                    </span> <br />
                     <TypeAnimation
                         sequence={[
                             "Full-Stack Systems",
@@ -30,7 +32,7 @@ const Hero = () => {
                             1500,
                             "Real-Time Architectures",
                             1500,
-                            "Scalable Products",
+                            "IT & Business Operations",
                             1500,
                         ]}
                         wrapper='span'
@@ -41,7 +43,7 @@ const Hero = () => {
                 </h1>
 
                 <p className='text-gray-400 text-sm sm:text-lg lg:text-xl max-w-xl mx-auto md:mx-0 my-4 md:my-6 leading-relaxed'>
-                    Full-Stack Developer specializing in robust system design and deeply integrating AI to accelerate workflows and deliver high-performance applications.
+                    Full-Stack Developer specializing in robust system design, IT & business operations, and deeply integrating AI to accelerate workflows and deliver high-performance applications.
                 </p>
 
                 <div className='flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mt-6 md:mt-4'>

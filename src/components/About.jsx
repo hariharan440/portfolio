@@ -15,9 +15,7 @@ const About = () => {
               <h2 className='text-4xl font-bold primary-color'>About Me</h2>
               <SpeakerButton text="I am a Full-Stack Developer with strong system design fundamentals and experience building scalable, real-time architectures. I use AI extensively throughout the development lifecycle for rapid problem-solving, efficient debugging, and delivering high-quality products. I am currently exploring AI Agents, Voice AI, and real-time reliable tool calling." />
             </div>
-            <p className='text-base lg:text-lg'>
-              Full-Stack Developer with strong system design fundamentals and experience building scalable, real-time architectures. I use AI extensively throughout the development lifecycle—leveraging tools like Claude, Cursor, and Antigravity—for rapid problem-solving, efficient debugging, and delivering high-quality products.
-            </p>
+            Full-Stack Developer with strong system design fundamentals and experience building scalable applications and real-time architectures. Skilled in working with ERP and CRM systems, managing business workflows, handling data, and supporting application operations. I use AI extensively throughout the development lifecycle—leveraging tools like Claude, Codex, and Antigravity—for rapid problem-solving, efficient debugging, workflow automation, and delivering high-quality products.
             <div className='mt-6'>
               <h3 className='text-sm font-semibold text-gray-400 uppercase tracking-wider mb-2'>Currently Exploring</h3>
               <p className='text-sm text-gray-300'>
