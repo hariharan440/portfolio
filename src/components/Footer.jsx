@@ -42,7 +42,7 @@ const Footer = () => {
 
                         {/* Appreciation & Ambition Statement */}
                         <p className='text-gray-400 text-xs sm:text-sm leading-relaxed max-w-xl'>
-                            Rooted in India, building in Dubai — bringing strong technical foundations and operational excellence to innovative teams across the UAE.
+                            With a strong technical background and hands-on experience in software development, ERP/CRM systems, and business operations, I’m looking to grow my career in Dubai by contributing to Software Development and IT & Business Operations roles across the UAE.
                         </p>
                     </div>
 
