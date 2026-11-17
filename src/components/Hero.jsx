@@ -17,6 +17,24 @@ const Hero = () => {
             <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-purple-600 rounded-full mix-blend-screen filter blur-[100px] opacity-20 pointer-events-none"></div>
 
             <div className='flex flex-col z-10 text-center md:text-left mt-8 md:mt-0 w-full md:w-3/5'>
+                {/* Recruiter Location & Availability Badge */}
+                <div className="inline-flex flex-wrap items-center justify-center md:justify-start gap-2 text-xs sm:text-sm text-gray-300 bg-[#141414] border border-gray-800 px-3.5 py-1.5 rounded-full mb-3.5 w-fit mx-auto md:mx-0 shadow-sm">
+                    <span className="flex items-center gap-1.5 font-medium text-white">
+                        <span>📍</span>
+                        <span>Deira, Dubai, UAE</span>
+                    </span>
+                    <span className="text-gray-600 hidden xs:inline">•</span>
+                    <span className="flex items-center gap-1.5 text-gray-400">
+                        <span>🇮🇳</span>
+                        <span>From India</span>
+                    </span>
+                    <span className="text-gray-600 hidden xs:inline">•</span>
+                    <span className="inline-flex items-center gap-1.5 text-emerald-400 font-medium">
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Available Immediately
+                    </span>
+                </div>
+
                 <p className='text-gray-400 text-base md:text-xl font-medium tracking-wide mb-2 md:mb-3 uppercase'>
                     👋 Hello, I'm <span className="text-white font-bold">Hariharan A</span>
                 </p>

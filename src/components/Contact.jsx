@@ -6,7 +6,7 @@ const contactMethods = [
     id: 'phone',
     title: 'Phone / WhatsApp',
     detail: '+971-0554962086',
-    badge: 'Dubai, UAE',
+    badge: 'Deira, Dubai, UAE',
     href: 'tel:+9710554962086',
     icon: FaPhoneAlt,
     iconColor: 'text-emerald-400 group-hover:text-emerald-300'
@@ -46,13 +46,26 @@ const Contact = () => {
       {/* Background decoration */}
       <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[#3F2B96] rounded-full mix-blend-screen filter blur-[150px] opacity-10 pointer-events-none"></div>
 
-      <div className='text-center mb-8 md:mb-14 relative z-10'>
+      <div className='text-center mb-8 md:mb-12 relative z-10'>
         <p className='text-xs sm:text-sm text-[#a855f7] uppercase tracking-widest font-bold mb-1.5 md:mb-2'>Get In Touch</p>
-        <h2 className='text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-white'>
+        <h2 className='text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-white mb-3'>
           Let's Build <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#3F2B96] to-[#a855f7]'>Together</span>
         </h2>
-        <p className="mt-3 md:mt-4 text-gray-400 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed px-2">
-          Whether you have a question, a project idea, or an opportunity in Dubai / UAE, I'm always open to discussing new challenges and architectures.
+
+        {/* Location & Immediate Availability Banner */}
+        <div className="inline-flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm text-gray-300 bg-[#161616] border border-gray-800 px-4 py-2 rounded-full mb-4 shadow-sm">
+          <span className="flex items-center gap-1.5 font-medium text-white">
+            <span className="text-emerald-400">📍</span> Deira, Dubai, UAE
+          </span>
+          <span className="text-gray-600 hidden xs:inline">•</span>
+          <span className="inline-flex items-center gap-1.5 text-emerald-400 font-medium">
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            Open to Immediate Joining & In-Person Interviews
+          </span>
+        </div>
+
+        <p className="mt-1 text-gray-400 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed px-2">
+          Currently based in Deira, Dubai. Whether you have an immediate opening, a project idea, or would like to connect, I'm always open to discussing new opportunities across the UAE.
         </p>
       </div>
 

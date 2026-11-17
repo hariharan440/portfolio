@@ -31,7 +31,7 @@ const Footer = () => {
                                 <span className='text-red-500/90 text-xs select-none' title="Appreciation & Connection">❤️</span>
                                 <span className='flex items-center gap-1.5 font-medium text-white'>
                                     <span className='text-base leading-none'>🇦🇪</span>
-                                    <span>Currently based in Dubai, UAE</span>
+                                    <span>Currently based in Deira, Dubai, UAE</span>
                                 </span>
                             </div>
                             <span className='inline-flex items-center gap-1.5 text-xs text-emerald-400 bg-emerald-950/40 border border-emerald-800/50 px-3 py-1.5 rounded-full font-medium'>
@@ -55,7 +55,7 @@ const Footer = () => {
                             >
                                 <FaPhoneAlt className='text-emerald-400 group-hover:scale-110 transition-transform' size={13} />
                                 <span className='font-medium'>+971-0554962086</span>
-                                <span className='text-[10px] text-gray-400 bg-[#161616] px-1.5 py-0.5 rounded border border-gray-800'>Dubai</span>
+                                <span className='text-[10px] text-gray-400 bg-[#161616] px-1.5 py-0.5 rounded border border-gray-800'>Deira, Dubai</span>
                             </a>
                             <a
                                 href='mailto:hariharan02anantharaj@gmail.com'

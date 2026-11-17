@@ -23,12 +23,12 @@ function App() {
           <Route path="/" element={<>
             <Navbar />
             <Hero />
-            <Skills />
             <About />
             <Experience />
+            <Work />
+            <Skills />
             <Certificates />
             <Languages />
-            <Work />
             <Contact />
             <Footer />
           </>} 
