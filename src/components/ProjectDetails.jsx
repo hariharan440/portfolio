@@ -4,37 +4,11 @@ import { useParams, Link } from 'react-router-dom';
 import images from "../assets/index.js";
 import PageNotFound from '../PageNotFound';
 import { FaArrowLeft, FaExternalLinkAlt, FaTimes, FaSearchPlus } from 'react-icons/fa';
+import SpeakerButton from './SpeakerButton';
 
 const projects = [
     {
         id: 1,
-        title: 'Nexgen IT Academy',
-        category: 'EdTech Platform',
-        description: 'Nexgen IT Academy offers a wide range of IT courses and certifications, focusing on skills like mobile app development, web development, and programming. The platform emphasizes practical learning, guided by experienced industry professionals. Courses are flexible and accessible online, making education more convenient. Nexgen also supports students with a friendly environment and campus events, aiming to empower learners to succeed despite challenges.',
-        images: [images.nex1, images.nex2],
-        technologies: [images.html, images.css, images.boot],
-        demoLink: 'https://nexgenitacademy.com/',
-    },
-    {
-        id: 2,
-        title: 'Roriri Software Solutions',
-        category: 'Software Solutions',
-        description: 'Roriri Soft specializes in offering comprehensive software development services, focusing on customized solutions for businesses. They provide expertise in areas like web and mobile app development, cloud services, and IT consulting. The company aims to deliver innovative and efficient software solutions tailored to client needs, ensuring scalability and performance optimization. Additionally, they emphasize a collaborative approach, working closely with clients to meet their business objectives.',
-        images: [images.roriri, images.roriri1],
-        technologies: [images.html, images.css, images.boot],
-        demoLink: 'https://roririsoft.com',
-    },
-    {
-        id: 3,
-        title: 'Terraze: Intelligent AI Agents & Workflow Automation',
-        category: 'AI & Automation Platform',
-        description: 'Terraze specializes in empowering businesses with next-generation AI-driven automation solutions. Their platform supports seamless workflow automation, intelligent call-handling, and lead-capture services, tailored for real-estate, sales and customer-support teams. With a focus on scalability, integration and productivity enhancement, Terraze collaborates closely with clients to understand their processes and deliver customised automation that drives efficiency and growth.',
-        images: [images.terraze1, images.terraze2],
-        technologies: [images.next, images.tailwind, images.api, images.js],
-        demoLink: 'https://terraze.net',
-    },
-    {
-        id: 9,
         title: 'Repliq CRM',
         category: 'Enterprise CRM Platform',
         description: (
@@ -56,9 +30,30 @@ const projects = [
         images: [images.repliq],
         technologies: [images.next, images.tailwind, images.api, images.typescript],
         demoLink: null,
+        narration: 'Repliq CRM. A comprehensive Customer Relationship Management platform designed to streamline sales pipelines, track interactions, and manage client data securely.',
     },
     {
-        id: 10,
+        id: 2,
+        title: 'Tex Master Pro',
+        category: 'Smart Manufacturing & IoT',
+        description: 'An intelligent manufacturing platform for apparel factories that connects sewing machines, operators, and production lines through IoT integration. Provides real-time production monitoring, operator management, automated data capture, factory dashboards, and analytics to improve productivity and operational efficiency.',
+        images: [images.texmasterpro, images.texmasterpro1],
+        technologies: [images.next, images.tailwind],
+        demoLink: 'https://texmasterpro.com',
+        narration: 'Tex Master Pro. An intelligent manufacturing platform for apparel factories that connects sewing machines, operators, and production lines through IoT integration. Provides real-time production monitoring, operator management, automated data capture, factory dashboards, and analytics to improve productivity and operational efficiency, built with Next.js and Tailwind CSS.',
+    },
+    {
+        id: 3,
+        title: 'Terraze: Intelligent AI Agents & Workflow Automation',
+        category: 'AI & Automation Platform',
+        description: 'Terraze specializes in empowering businesses with next-generation AI-driven automation solutions. Their platform supports seamless workflow automation, intelligent call-handling, and lead-capture services, tailored for real-estate, sales and customer-support teams. With a focus on scalability, integration and productivity enhancement, Terraze collaborates closely with clients to understand their processes and deliver customised automation that drives efficiency and growth.',
+        images: [images.terraze1, images.terraze2],
+        technologies: [images.next, images.tailwind, images.api, images.js],
+        demoLink: 'https://terraze.net',
+        narration: 'Terraze. An intelligent AI-powered product and automation platform focused on workflow optimization, smart agent workflows, and CRM integrations.',
+    },
+    {
+        id: 4,
         title: 'School Finance Tracking and Management',
         category: 'FinTech / EdTech Platform',
         description: (
@@ -68,10 +63,10 @@ const projects = [
                 <div>
                     <span className="font-bold text-white">Key Work:</span>
                     <ul className="list-disc pl-6 mt-2 space-y-1.5 text-gray-400">
-                        <li>Developed secure transaction tracking and ledger views</li>
-                        <li>Built data visualization components for financial metrics</li>
-                        <li>Integrated role-based access for admins and accountants</li>
-                        <li>Optimized large-scale data aggregation queries</li>
+                        <li>Architected backend services and API endpoints</li>
+                        <li>Implemented secure authentication and data handling</li>
+                        <li>Designed dynamic and responsive frontend dashboards</li>
+                        <li>Ensured real-time data updates and high availability</li>
                     </ul>
                 </div>
                 <div className="pt-2"><span className="font-bold text-white">Status:</span> <span className="text-emerald-400 font-medium">Active Development</span></div>
@@ -80,15 +75,17 @@ const projects = [
         images: [images.landing],
         technologies: [images.react, images.tailwind, images.api, images.js],
         demoLink: null,
+        narration: 'School Finance Tracking and Management. A dedicated financial platform tailored for educational institutions to track tuitions, manage payroll, and generate dynamic financial reports.',
     },
     {
-        id: 6,
+        id: 5,
         title: 'Hotel Moon',
         category: 'Hospitality Website',
         description: "The Hotel Moon website features a clean and modern design that showcases various hotel options with appealing images. It includes sections for amenities, room types, and booking information, enhancing user experience. The layout is responsive, ensuring accessibility across devices, and emphasizes key details to attract potential guests.",
         images: [images.hotel1, images.hotel, images.hotel2],
         technologies: [images.html, images.css],
         demoLink: 'https://hariharan440.github.io/hotelmoon/',
+        narration: 'Hotel Moon. A clean and modern website showcasing various hotel options, amenities, and room bookings.',
     },
 ];
 
@@ -121,8 +118,8 @@ const ProjectDetails = () => {
 
             <div className="max-w-[1200px] mx-auto relative z-10">
                 {/* Back Button */}
-                <Link 
-                    to="/" 
+                <Link
+                    to="/"
                     className="inline-flex items-center gap-2.5 text-xs sm:text-sm text-gray-400 hover:text-white transition-colors mb-8 group bg-[#141414] border border-gray-800 px-4 py-2 rounded-full shadow-sm hover:border-purple-500/50"
                 >
                     <FaArrowLeft className="group-hover:-translate-x-1 transition-transform text-purple-400" size={12} />
@@ -137,9 +134,14 @@ const ProjectDetails = () => {
                                 {project.category}
                             </span>
                         )}
-                        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
-                            {project.title}
-                        </h1>
+                        <div className="flex items-center gap-3.5 flex-wrap">
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
+                                {project.title}
+                            </h1>
+                            {project.narration && (
+                                <SpeakerButton text={project.narration} />
+                            )}
+                        </div>
                     </div>
 
                     {project.demoLink ? (
@@ -167,9 +169,9 @@ const ProjectDetails = () => {
                     </h2>
                     <div className={`grid gap-6 ${project.images.length === 1 ? 'grid-cols-1 max-w-3xl' : 'grid-cols-1 md:grid-cols-2'}`}>
                         {project.images.map((image, index) => (
-                            <div 
-                                key={index} 
-                                className="relative group cursor-pointer rounded-2xl overflow-hidden border border-gray-800/90 bg-[#121212] shadow-xl hover:border-purple-500/50 transition-all duration-300" 
+                            <div
+                                key={index}
+                                className="relative group cursor-pointer rounded-2xl overflow-hidden border border-gray-800/90 bg-[#121212] shadow-xl hover:border-purple-500/50 transition-all duration-300"
                                 onClick={() => openModal(image)}
                             >
                                 <img
@@ -213,8 +215,8 @@ const ProjectDetails = () => {
                             </p>
                             <div className="flex flex-wrap gap-3">
                                 {project.technologies.map((tech, index) => (
-                                    <div 
-                                        key={index} 
+                                    <div
+                                        key={index}
                                         className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-[#181818] border border-gray-800 flex items-center justify-center p-3 hover:border-purple-500/50 hover:bg-purple-950/20 hover:scale-105 transition-all shadow-md group"
                                     >
                                         <img
@@ -245,11 +247,11 @@ const ProjectDetails = () => {
 
                 {/* Modal for Fullscreen Image Preview */}
                 {isModalOpen && (
-                    <div 
+                    <div
                         className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md p-4 animate-fade-in"
                         onClick={closeModal}
                     >
-                        <div 
+                        <div
                             className="relative max-w-5xl max-h-[90vh] bg-[#121212] border border-gray-800 rounded-2xl overflow-hidden shadow-2xl p-2"
                             onClick={(e) => e.stopPropagation()}
                         >

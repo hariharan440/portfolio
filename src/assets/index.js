@@ -28,11 +28,15 @@ import api from "./api.png";
 import terraze1 from "./terraze1.png";
 import terraze2 from "./terraze2.png";
 import typescript from "./typescript.png";
+import tex from "./tex.png";
+import tex1 from "./tex1.png";
 
 const images = {
   proj1, proj2, proj3, proj4, proj5, proj6, proj7, proj8, repliq,
   nex1, nex2, roriri, roriri1, food1, food2, landing, hotel, hotel1, hotel2,
-  react, next, tailwind, html, css, boot, js, api, terraze1, terraze2, typescript
+  react, next, tailwind, html, css, boot, js, api, terraze1, terraze2, typescript, tex, tex1,
+  texmasterpro: tex,
+  texmasterpro1: tex1
 };
 
 export default images;

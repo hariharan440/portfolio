@@ -51,6 +51,7 @@ const SpeakerButton = ({ text }) => {
         .replace(/&/g, 'and')
         .replace(/\bCRM\b/g, 'C R M')
         .replace(/\bERP\b/g, 'E R P')
+        .replace(/\bIoT\b/g, 'I o T')
         .replace(/\bAPI\b/g, 'A P I')
         .replace(/\bAPIs\b/g, 'A P I s')
         .replace(/\bRBAC\b/g, 'R B A C')

@@ -6,18 +6,29 @@ import { FaArrowRight, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
   {
-    id: 9,
+    id: 1,
     image: images.repliq,
     title: "Repliq CRM",
     category: "CRM & ERP Platform",
     description: "Enterprise Customer Relationship Management platform designed to streamline sales pipelines, track interactions, and manage client data securely.",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "REST API"],
-    link: "/project/9",
+    link: "/project/1",
     type: "internal",
     narration: "Repliq CRM. A comprehensive Customer Relationship Management platform designed to streamline sales pipelines and manage client data securely."
   },
   {
-    id: 1,
+    id: 2,
+    image: images.tex,
+    title: "Tex Master Pro",
+    category: "Smart Manufacturing & IoT",
+    description: "Intelligent manufacturing platform for apparel factories connecting IoT sewing machines, operators, and production lines with real-time analytics.",
+    tags: ["IoT Integration", "Real-Time Monitoring", "Tailwind CSS", "Next.js"],
+    link: "/project/2",
+    type: "internal",
+    narration: "Tex Master Pro. An intelligent manufacturing platform for apparel factories that connects sewing machines, operators, and production lines through IoT integration. Provides real-time production monitoring, operator management, automated data capture, factory dashboards, and analytics to improve productivity and operational efficiency, built with Next.js and Tailwind CSS."
+  },
+  {
+    id: 3,
     image: images.proj7,
     title: "Terraze",
     category: "AI & Workflow Automation",
@@ -28,26 +39,37 @@ const projects = [
     narration: "Terraze. An AI-powered product and automation platform focused on intelligent workflows, API integration, and CRM experiences."
   },
   {
-    id: 3,
-    image: images.proj3,
-    title: "Nexgen IT Academy",
-    category: "EdTech Platform",
-    description: "Comprehensive educational platform offering hands-on IT courses, career paths, and certifications guided by industry experts.",
-    tags: ["HTML5", "CSS3", "Bootstrap", "JavaScript"],
-    link: "/project/1",
+    id: 4,
+    image: images.landing,
+    title: "School Finance Platform",
+    category: "FinTech & Education",
+    description: "Dedicated financial tracking and management platform for educational institutions to handle tuitions, payroll, and reporting.",
+    tags: ["React", "Tailwind CSS", "Data Analytics", "Financial Logic"],
+    link: "/project/4",
     type: "internal",
-    narration: "Nexgen IT Academy. An educational platform offering a wide range of IT courses and certifications with a focus on practical learning."
+    narration: "School Finance Platform. A dedicated financial tracking system tailored for educational institutions to manage tuitions, payroll, and reporting."
   },
   {
-    id: 6,
+    id: 5,
     image: images.proj4,
     title: "Hotel Moon",
     category: "Hospitality & Booking",
     description: "Clean, responsive hospitality website showcasing hotel amenities, room booking workflows, and contemporary guest experiences.",
     tags: ["Responsive UI", "HTML5", "CSS3", "JavaScript"],
-    link: "/project/6",
+    link: "/project/5",
     type: "internal",
     narration: "Hotel Moon. A clean and modern website showcasing various hotel options, amenities, and room bookings."
+  },
+  {
+    id: 6,
+    image: images.proj8,
+    title: "Travel Booking App",
+    category: "Travel & Discovery",
+    description: "Interactive travel booking and destination discovery application tailored for exploring flights, stays, and regional tours.",
+    tags: ["React", "UI Components", "API Integration"],
+    link: "/site-under-construction",
+    type: "internal",
+    narration: "Travel Booking App. An application for booking flights, hotels, and exploring destinations."
   },
   {
     id: 7,
@@ -59,17 +81,6 @@ const projects = [
     link: "/site-under-construction",
     type: "internal",
     narration: "Edie Homepage Challenge. A responsive frontend design challenge."
-  },
-  {
-    id: 8,
-    image: images.proj8,
-    title: "Travel Booking App",
-    category: "Travel & Discovery",
-    description: "Interactive travel booking and destination discovery application tailored for exploring flights, stays, and regional tours.",
-    tags: ["React", "UI Components", "API Integration"],
-    link: "/site-under-construction",
-    type: "internal",
-    narration: "Travel Booking App. An application for booking flights, hotels, and exploring destinations."
   },
 ];
 
