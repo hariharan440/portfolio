@@ -48,11 +48,13 @@ const SpeakerButton = ({ text }) => {
       
       // Pre-process text for 100% clear pronunciation of acronyms and technical terms
       const clearText = text
+        .replace(/&/g, 'and')
         .replace(/\bCRM\b/g, 'C R M')
         .replace(/\bERP\b/g, 'E R P')
         .replace(/\bAPI\b/g, 'A P I')
         .replace(/\bAPIs\b/g, 'A P I s')
         .replace(/\bRBAC\b/g, 'R B A C')
+        .replace(/\bUAE\b/g, 'U A E')
         .replace(/\bAI\b/g, 'A I');
 
       const utterance = new SpeechSynthesisUtterance(clearText);
