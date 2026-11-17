@@ -5,9 +5,9 @@ const contactMethods = [
   {
     id: 'phone',
     title: 'Phone / WhatsApp',
-    detail: '+971-0554962086',
+    detail: '+971-554962086',
     badge: 'Deira, Dubai, UAE',
-    href: 'tel:+9710554962086',
+    href: 'tel:+971554962086',
     icon: FaPhoneAlt,
     iconColor: 'text-emerald-400 group-hover:text-emerald-300'
   },
@@ -58,14 +58,18 @@ const Contact = () => {
             <span className="text-emerald-400">📍</span> Deira, Dubai, UAE
           </span>
           <span className="text-gray-600 hidden xs:inline">•</span>
+          <span className="inline-flex items-center gap-1 text-purple-300 font-semibold bg-purple-950/40 border border-purple-800/50 px-2 py-0.5 rounded text-[11px] sm:text-xs">
+            Visit Visa
+          </span>
+          <span className="text-gray-600 hidden xs:inline">•</span>
           <span className="inline-flex items-center gap-1.5 text-emerald-400 font-medium">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            Open to Immediate Joining & In-Person Interviews
+            Immediate Joining & In-Person Interviews
           </span>
         </div>
 
         <p className="mt-1 text-gray-400 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed px-2">
-          Currently based in Deira, Dubai. Whether you have an immediate opening, a project idea, or would like to connect, I'm always open to discussing new opportunities across the UAE.
+          Currently based in Deira, Dubai on a Visit Visa. Ready for immediate joining, visa transfer, and in-person interviews across the UAE.
         </p>
       </div>
 

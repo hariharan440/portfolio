@@ -34,6 +34,9 @@ const Footer = () => {
                                     <span>Currently based in Deira, Dubai, UAE</span>
                                 </span>
                             </div>
+                            <span className='inline-flex items-center gap-1.5 text-xs text-purple-300 bg-purple-950/40 border border-purple-800/50 px-3 py-1.5 rounded-full font-medium'>
+                                <span>Visit Visa</span>
+                            </span>
                             <span className='inline-flex items-center gap-1.5 text-xs text-emerald-400 bg-emerald-950/40 border border-emerald-800/50 px-3 py-1.5 rounded-full font-medium'>
                                 <span className='w-2 h-2 rounded-full bg-emerald-400 animate-pulse'></span>
                                 Open to Opportunities in UAE
@@ -54,7 +57,7 @@ const Footer = () => {
                                 className='inline-flex items-center gap-2 text-gray-300 hover:text-white transition-colors text-sm group'
                             >
                                 <FaPhoneAlt className='text-emerald-400 group-hover:scale-110 transition-transform' size={13} />
-                                <span className='font-medium'>+971-0554962086</span>
+                                <span className='font-medium'>+971-554962086</span>
                                 <span className='text-[10px] text-gray-400 bg-[#161616] px-1.5 py-0.5 rounded border border-gray-800'>Deira, Dubai</span>
                             </a>
                             <a
