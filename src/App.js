@@ -6,6 +6,7 @@ import Certificates from './components/Certificates';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
+import Languages from './components/Languages';
 import Navbar from './components/Navbar';
 import Skills from './components/Skills';
 import Work from './components/Work';
@@ -26,6 +27,7 @@ function App() {
             <About />
             <Experience />
             <Certificates />
+            <Languages />
             <Work />
             <Contact />
             <Footer />
