@@ -1,6 +1,6 @@
 //About
 import React from 'react';
-import aboutImg from '../assets/about.jpg';
+import aboutImg from '../assets/about1.png';
 import SpeakerButton from './SpeakerButton';
 
 const About = () => {
