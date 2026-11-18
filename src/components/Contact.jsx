@@ -116,6 +116,44 @@ const Contact = () => {
           );
         })}
       </div>
+
+      {/* Recruiter Quick Verification Card */}
+      <div className="mt-8 sm:mt-10 max-w-[1100px] mx-auto bg-gradient-to-r from-[#141414] via-[#101010] to-[#141414] border border-gray-800/80 rounded-2xl p-4 sm:p-5 relative z-10 shadow-lg">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 text-center sm:text-left pb-3 mb-3 border-b border-gray-800/60">
+          <div>
+            <h4 className="text-xs sm:text-sm font-bold text-white uppercase tracking-wider flex items-center justify-center sm:justify-start gap-2">
+              <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
+              Recruiter & HR Verification Details
+            </h4>
+            <p className="text-[11px] sm:text-xs text-gray-400 mt-0.5">
+              Available for immediate visa transfer and in-person joining across the UAE
+            </p>
+          </div>
+          <span className="self-center sm:self-auto inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 bg-emerald-950/40 border border-emerald-800/50 px-3 py-1 rounded-full">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            Ready to Join
+          </span>
+        </div>
+
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-4 text-left">
+          <div className="bg-[#181818]/70 border border-gray-800/60 rounded-xl p-2.5 sm:p-3">
+            <span className="text-[10px] sm:text-[11px] text-gray-500 uppercase font-semibold block mb-0.5">Date of Birth</span>
+            <span className="text-xs sm:text-sm font-bold text-white font-mono">25/11/2002</span>
+          </div>
+          <div className="bg-[#181818]/70 border border-gray-800/60 rounded-xl p-2.5 sm:p-3">
+            <span className="text-[10px] sm:text-[11px] text-gray-500 uppercase font-semibold block mb-0.5">Passport Number</span>
+            <span className="text-xs sm:text-sm font-bold text-white font-mono tracking-wider">BD690767</span>
+          </div>
+          <div className="bg-[#181818]/70 border border-gray-800/60 rounded-xl p-2.5 sm:p-3">
+            <span className="text-[10px] sm:text-[11px] text-gray-500 uppercase font-semibold block mb-0.5">Passport Expiry</span>
+            <span className="text-xs sm:text-sm font-bold text-gray-200 font-mono">28/09/2036</span>
+          </div>
+          <div className="bg-[#181818]/70 border border-gray-800/60 rounded-xl p-2.5 sm:p-3">
+            <span className="text-[10px] sm:text-[11px] text-gray-500 uppercase font-semibold block mb-0.5">Visa Status</span>
+            <span className="text-xs sm:text-sm font-bold text-purple-300">Visit Visa</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

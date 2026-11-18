@@ -38,7 +38,7 @@ const skillCategories = [
   },
   {
     title: "Infrastructure / Tools",
-    skills: ["Docker", "Supabase", "Git", "GitHub", "Postman", "Swagger"]
+    skills: ["Docker", "Supabase", "Git", "GitHub", "Postman", "Swagger", "Microsoft Word", "Microsoft Excel", "Notion", "Canva"]
   }
 ];
 
