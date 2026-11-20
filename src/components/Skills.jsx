@@ -26,7 +26,17 @@ const skillCategories = [
   },
   {
     title: "AI & Automation",
-    skills: ["Gemini", "AI Agents", "AI Automation", "Tool Calling"]
+    skills: [
+      "LangChain",
+      "LangGraph",
+      "CrewAI",
+      "n8n",
+      "AI Agents",
+      "AI Automation",
+      "Prompt Engineering",
+      "Tool Calling",
+      "Gemini"
+    ]
   },
   {
     title: "AI-Powered Dev Tools",

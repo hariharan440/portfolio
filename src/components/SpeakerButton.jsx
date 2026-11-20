@@ -56,6 +56,8 @@ const SpeakerButton = ({ text }) => {
         .replace(/\bAPIs\b/g, 'A P I s')
         .replace(/\bRBAC\b/g, 'R B A C')
         .replace(/\bUAE\b/g, 'U A E')
+        .replace(/\bCrewAI\b/g, 'Crew A I')
+        .replace(/\bn8n\b/g, 'N 8 N')
         .replace(/\bAI\b/g, 'A I');
 
       const utterance = new SpeechSynthesisUtterance(clearText);
