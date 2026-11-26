@@ -53,23 +53,23 @@ const Contact = () => {
         </h2>
 
         {/* Location & Immediate Availability Banner */}
-        <div className="inline-flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm text-gray-300 bg-[#161616] border border-gray-800 px-4 py-2 rounded-full mb-4 shadow-sm">
+        <div className="inline-flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm text-gray-300 bg-[#141414]/90 border border-gray-800/90 px-4 py-1.5 rounded-full mb-3.5 shadow-sm backdrop-blur-sm">
           <span className="flex items-center gap-1.5 font-medium text-white">
-            <span className="text-emerald-400">📍</span> Deira, Dubai, UAE
+            <span className="text-purple-400">📍</span> Deira, Dubai, UAE
           </span>
-          <span className="text-gray-600 hidden xs:inline">•</span>
-          <span className="inline-flex items-center gap-1 text-purple-300 font-semibold bg-purple-950/40 border border-purple-800/50 px-2 py-0.5 rounded text-[11px] sm:text-xs">
+          <span className="text-gray-600 hidden sm:inline">•</span>
+          <span className="text-purple-300 font-medium">
             Visit Visa
           </span>
-          <span className="text-gray-600 hidden xs:inline">•</span>
+          <span className="text-gray-600 hidden sm:inline">•</span>
           <span className="inline-flex items-center gap-1.5 text-emerald-400 font-medium">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            Immediate Joining & In-Person Interviews
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            Available for Immediate Joining
           </span>
         </div>
 
-        <p className="mt-1 text-gray-400 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed px-2">
-          Currently based in Deira, Dubai on a Visit Visa. Ready for immediate joining, visa transfer, and in-person interviews across the UAE.
+        <p className="mt-1 text-gray-400 max-w-xl mx-auto text-sm sm:text-base leading-relaxed px-2">
+          Ready for in-person interviews and employment visa transfer across the UAE.
         </p>
       </div>
 

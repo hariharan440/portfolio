@@ -1,6 +1,5 @@
 import React from 'react';
 import SpeakerButton from './SpeakerButton';
-import { FaCheck } from 'react-icons/fa';
 
 const languages = [
   {
@@ -82,22 +81,17 @@ const Languages = () => {
               </p>
             </div>
 
-            {/* Competency Badges */}
-            <div className='relative z-10 pt-4 border-t border-gray-800/60'>
-              <p className='text-[10px] uppercase tracking-wider text-gray-500 font-semibold mb-2'>
-                Competency
-              </p>
-              <div className='flex flex-wrap gap-2'>
-                {lang.skills.map((skill, idx) => (
-                  <span 
-                    key={idx}
-                    className='inline-flex items-center gap-1.5 text-xs text-gray-300 bg-[#1a1a1a] border border-gray-800/80 px-2.5 py-1 rounded-md font-medium'
-                  >
-                    <FaCheck className='text-emerald-400 text-[10px]' />
-                    <span>{skill}</span>
-                  </span>
-                ))}
-              </div>
+            {/* Competency Tags */}
+            <div className='relative z-10 flex flex-wrap gap-1.5 pt-3.5 border-t border-gray-800/60'>
+              {lang.skills.map((skill, idx) => (
+                <span 
+                  key={idx}
+                  className='inline-flex items-center gap-1 text-[11px] font-medium text-gray-300 bg-[#181818] border border-gray-800/80 px-2.5 py-1 rounded-md'
+                >
+                  <span className='w-1 h-1 rounded-full bg-purple-400'></span>
+                  <span>{skill}</span>
+                </span>
+              ))}
             </div>
           </div>
         ))}

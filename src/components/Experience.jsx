@@ -129,17 +129,6 @@ const Experience = () => {
                       <span>{exp.timeline}</span>
                     </span>
                     <SpeakerButton text={`At ${exp.company}, working as ${exp.role}. ${exp.overview}`} />
-                    <button 
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        toggleExpand(exp.id);
-                      }}
-                      className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#181818] border border-gray-700/60 flex items-center justify-center text-gray-400 hover:text-white hover:border-purple-500/50 hover:bg-purple-950/20 transition-all shadow-sm"
-                      aria-label={isExpanded ? "Collapse details" : "Expand details"}
-                      title={isExpanded ? "Collapse details" : "Expand details"}
-                    >
-                      {isExpanded ? <FaChevronUp size={11} /> : <FaChevronDown size={11} />}
-                    </button>
                   </div>
                 </div>
 
@@ -152,10 +141,10 @@ const Experience = () => {
                 <div className="flex items-center justify-between pt-1">
                   <button
                     onClick={() => toggleExpand(exp.id)}
-                    className="inline-flex items-center gap-1.5 text-xs text-purple-400 hover:text-purple-300 font-semibold transition-colors"
+                    className="inline-flex items-center gap-1.5 text-xs text-purple-400 hover:text-purple-300 font-semibold transition-colors group/btn"
                   >
                     <span>{isExpanded ? 'Hide Key Work & Tech Stack' : 'Show Key Work & Tech Stack'}</span>
-                    {isExpanded ? <FaChevronUp size={10} /> : <FaChevronDown size={10} />}
+                    {isExpanded ? <FaChevronUp size={10} className="transform group-hover/btn:-translate-y-0.5 transition-transform" /> : <FaChevronDown size={10} className="transform group-hover/btn:translate-y-0.5 transition-transform" />}
                   </button>
                 </div>
 

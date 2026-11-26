@@ -18,21 +18,16 @@ const Hero = () => {
 
             <div className='flex flex-col z-10 text-center md:text-left mt-8 md:mt-0 w-full md:w-3/5'>
                 {/* Recruiter Location, Visa & Availability Badge */}
-                <div className="inline-flex flex-wrap items-center justify-center md:justify-start gap-2 text-xs sm:text-sm text-gray-300 bg-[#141414] border border-gray-800 px-3.5 py-1.5 rounded-full mb-3.5 w-fit mx-auto md:mx-0 shadow-sm">
+                <div className="inline-flex flex-wrap items-center justify-center md:justify-start gap-2 text-xs sm:text-sm text-gray-300 bg-[#141414]/90 border border-gray-800/90 px-3.5 py-1.5 rounded-full mb-3.5 w-fit mx-auto md:mx-0 shadow-sm backdrop-blur-sm">
                     <span className="flex items-center gap-1.5 font-medium text-white">
-                        <span>📍</span>
+                        <span className="text-purple-400">📍</span>
                         <span>Deira, Dubai, UAE</span>
                     </span>
-                    <span className="text-gray-600 hidden xs:inline">•</span>
+                    <span className="text-gray-600 hidden sm:inline">•</span>
                     <span className="inline-flex items-center gap-1 text-purple-300 font-semibold bg-purple-950/40 border border-purple-800/50 px-2 py-0.5 rounded text-[11px] sm:text-xs">
                         Visit Visa
                     </span>
-                    <span className="text-gray-600 hidden xs:inline">•</span>
-                    <span className="flex items-center gap-1.5 text-gray-400">
-                        <span>🇮🇳</span>
-                        <span>From India</span>
-                    </span>
-                    <span className="text-gray-600 hidden xs:inline">•</span>
+                    <span className="text-gray-600 hidden sm:inline">•</span>
                     <span className="inline-flex items-center gap-1.5 text-emerald-400 font-medium">
                         <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
                         Available Immediately

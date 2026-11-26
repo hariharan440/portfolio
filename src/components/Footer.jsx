@@ -23,23 +23,14 @@ const Footer = () => {
 
                         {/* Location & Connection Badges */}
                         <div className='flex flex-wrap items-center justify-center lg:justify-start gap-2.5 mb-4'>
-                            <div className='inline-flex items-center gap-2 text-xs sm:text-sm text-gray-300 bg-[#141414] border border-gray-800/90 px-3.5 py-1.5 rounded-full shadow-sm'>
-                                <span className='flex items-center gap-1.5'>
-                                    <span className='text-base leading-none'>🇮🇳</span>
-                                    <span>Originally from India</span>
-                                </span>
-                                <span className='text-red-500/90 text-xs select-none' title="Appreciation & Connection">❤️</span>
-                                <span className='flex items-center gap-1.5 font-medium text-white'>
-                                    <span className='text-base leading-none'>🇦🇪</span>
-                                    <span>Currently based in Deira, Dubai, UAE</span>
-                                </span>
+                            <div className='inline-flex items-center gap-2 text-xs text-gray-300 bg-[#141414] border border-gray-800/90 px-3.5 py-1.5 rounded-full shadow-sm'>
+                                <span>🇮🇳 Originally from India</span>
+                                <span className='text-red-500 text-xs select-none' title="Appreciation & Connection">❤️</span>
+                                <span className='font-medium text-white'>🇦🇪 Based in Deira, Dubai, UAE</span>
                             </div>
-                            <span className='inline-flex items-center gap-1.5 text-xs text-purple-300 bg-purple-950/40 border border-purple-800/50 px-3 py-1.5 rounded-full font-medium'>
-                                <span>Visit Visa</span>
-                            </span>
-                            <span className='inline-flex items-center gap-1.5 text-xs text-emerald-400 bg-emerald-950/40 border border-emerald-800/50 px-3 py-1.5 rounded-full font-medium'>
-                                <span className='w-2 h-2 rounded-full bg-emerald-400 animate-pulse'></span>
-                                Open to Opportunities in UAE
+                            <span className='inline-flex items-center gap-1.5 text-xs text-emerald-400 bg-emerald-950/30 border border-emerald-800/40 px-3 py-1.5 rounded-full font-medium'>
+                                <span className='w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse'></span>
+                                Open to UAE Opportunities
                             </span>
                         </div>
 

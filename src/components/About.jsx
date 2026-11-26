@@ -32,7 +32,7 @@ const About = () => {
     .join(' ')}`;
 
   return (
-    <div className='text-white max-w-[1200px] mx-auto my-12 px-4 sm:px-6 font-sans' id='about'>
+    <div className='text-white max-w-[1200px] mx-auto my-10 md:my-14 px-4 sm:px-6 font-sans' id='about'>
       <div className='md:grid md:grid-cols-2 gap-8 items-center sm:py-8'>
         <div className='text-left'>
           <div className="flex items-center gap-4 mb-5">
