@@ -11,8 +11,10 @@ const About = () => {
     },
     {
       title: "IT & Business Operations",
-      description: "Practical understanding of ERP & CRM systems, business processes, data validation, report generation, and application support, with the ability to apply this knowledge to support day-to-day business operations."
+      // description: "Practical understanding of ERP & CRM systems, business processes, data validation, report generation, and application support, with the ability to apply this knowledge to support day-to-day business operations."
+      description: "Practical understanding of ERP and CRM systems, business processes, data validation, report generation, and application support. Skilled in technical troubleshooting, development environment setup, software installation and configuration, and basic networking, with the ability to support day-to-day IT and business operations."
     },
+
     // {
     //   title: "IT & Business Operations",
     //   description: "Hands-on experience working with ERP & CRM systems, business process management, data validation, report generation, and reliable application support."

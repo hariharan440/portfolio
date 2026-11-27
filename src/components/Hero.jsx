@@ -43,13 +43,13 @@ const Hero = () => {
                     </span> <br />
                     <TypeAnimation
                         sequence={[
-                            "Full-Stack Systems",
+                            "Application Support",
                             1500,
-                            "AI-Powered Tools",
+                            "Software Development",
                             1500,
-                            "Real-Time Architectures",
+                            "Enterprise ERP & CRM",
                             1500,
-                            "IT & Business Operations",
+                            "IT Operations & Automation",
                             1500,
                         ]}
                         wrapper='span'
@@ -60,7 +60,7 @@ const Hero = () => {
                 </h1>
 
                 <p className='text-gray-400 text-sm sm:text-lg lg:text-xl max-w-xl mx-auto md:mx-0 my-4 md:my-6 leading-relaxed'>
-                    Full-Stack Developer specializing in robust system design, IT & business operations, and deeply integrating AI to accelerate workflows and deliver high-performance applications.
+                    IT and Software Professional with 2+ years of experience across enterprise applications, full-stack software development, client-facing product support, and AI-driven workflow automation.
                 </p>
 
                 <div className='flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mt-6 md:mt-4'>

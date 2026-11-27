@@ -7,36 +7,41 @@ const experiences = [
     id: 1,
     company: "Bhumaha Solutions Private Limited",
     role: "Software Developer",
-    timeline: "Apr 2026 - Nov 2026",
-    overview: "Developed and architected full-stack modules for an ERP product, integrating APIs, optimizing scalability and performance, and implementing AI-powered business workflows.",
+    timeline: "Apr 2026 – Nov 2026",
+    overview: "Contributed to two core ERP modules: Customer Relationship Management (CRM) and Human Resource Management System (HRMS), developing full-stack module functionality and integrating APIs for enterprise workflows.",
     details: [
-      "Leveraged AI-assisted development and coding tools for architecture design, rapid implementation, unit testing, debugging, and optimization, reducing development time while maintaining code quality and reliability."
+      "Contributed to two ERP modules: Customer Relationship Management (CRM) and Human Resource Management System (HRMS).",
+      "Developed full-stack module functionality and integrated APIs to support enterprise application workflows.",
+      "Used AI-assisted tools for coding, testing, debugging, and optimization."
     ],
-    tags: ["ERP Systems", "Full-Stack Development", "REST APIs", "AI Workflows", "System Scalability"]
+    tags: ["ERP Systems", "CRM", "HRMS", "Full-Stack Development", "REST APIs", "AI-Assisted Dev"]
   },
   {
     id: 2,
     company: "Terraze",
     role: "Software Developer",
-    timeline: "May 2025 - Apr 2026",
-    overview: "Developed AI applications and automation workflows, contributing to product architecture, frontend development, and CRM workflows for lead management, customer interactions, and business automation.",
+    timeline: "May 2025 – Apr 2026",
+    overview: "Contributed to an AI-first CRM product across technical research, frontend development, and API integrations, while managing functional testing, client onboarding, and database management.",
     details: [
-      "Worked on a voice agent using AI libraries, orchestration layers, and finite-state architecture for reliable conversational workflows.",
-      "Engaged with clients through product demonstrations, presentations, and field operations, while supporting marketing and product adoption."
+      "Contributed to an AI-first CRM product across technical research, frontend development, API integrations, and occasional backend service development.",
+      "Performed functional, application workflow and API testing; investigated reported issues, documented bugs, and implemented fixes to improve product stability and functionality.",
+      "Supported client onboarding and product delivery through in-person discussions and online meetings; guided clients through product features, clarified technical concerns, explained solutions, and coordinated fixes.",
+      "Handled database-level client requests, including updating or removing records when required.",
+      "Built a voice agent using AI libraries, orchestration layers, and finite-state architecture."
     ],
-    tags: ["AI Agents", "Voice AI", "CRM Workflows", "Workflow Automation", "Client Presentations"]
+    tags: ["AI-First CRM", "Frontend Development", "API Testing & Debugging", "Client Onboarding", "Database Management", "Voice AI Agents"]
   },
   {
     id: 3,
     company: "Roriri Software Solutions",
     role: "MERN Stack Developer",
-    timeline: "Apr - Sep 2024",
-    overview: "Developed full-stack web applications using the MERN stack, building responsive user interfaces and RESTful APIs while collaborating in agile teams to deliver scalable, production-ready solutions.",
+    timeline: "Apr 2024 – Sep 2024",
+    overview: "Developed full-stack web applications using the MERN stack, building responsive user interfaces and RESTful APIs while collaborating in Agile teams to deliver production-ready solutions.",
     details: [
-      "Built dynamic, responsive web interfaces with React and Tailwind CSS, integrating performant backend APIs.",
-      "Collaborated in agile development cycles to deliver clean, maintainable code meeting client specifications."
+      "Developed full-stack web applications using MongoDB, Express.js, React.js, and Node.js.",
+      "Built responsive user interfaces and RESTful APIs, collaborating with Agile teams to deliver production-ready solutions."
     ],
-    tags: ["MERN Stack", "React", "Node.js", "Express.js", "MongoDB", "Agile"]
+    tags: ["MERN Stack", "MongoDB", "Express.js", "React.js", "Node.js", "REST APIs", "Agile"]
   }
 ];
 
