@@ -1,5 +1,6 @@
-import React from 'react';
-import { FaLinkedin, FaGithub, FaEnvelope, FaPhoneAlt, FaArrowRight } from 'react-icons/fa';
+import React, { useState } from 'react';
+import { FaLinkedin, FaGithub, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
+import { FiArrowUpRight, FiCheck, FiCopy } from 'react-icons/fi';
 
 const contactMethods = [
   {
@@ -9,7 +10,7 @@ const contactMethods = [
     badge: 'Deira, Dubai, UAE',
     href: 'tel:+971554962086',
     icon: FaPhoneAlt,
-    iconColor: 'text-emerald-400 group-hover:text-emerald-300'
+    isPrimary: false
   },
   {
     id: 'email',
@@ -17,7 +18,7 @@ const contactMethods = [
     detail: 'hariharan02anantharaj@gmail.com',
     href: 'mailto:hariharan02anantharaj@gmail.com',
     icon: FaEnvelope,
-    iconColor: 'text-purple-400 group-hover:text-purple-300'
+    isPrimary: true
   },
   {
     id: 'linkedin',
@@ -25,8 +26,8 @@ const contactMethods = [
     detail: 'Connect professionally',
     href: 'https://www.linkedin.com/in/hariharan-a-63848520a',
     icon: FaLinkedin,
-    iconColor: 'text-[#38bdf8] group-hover:text-sky-300',
-    external: true
+    external: true,
+    isPrimary: false
   },
   {
     id: 'github',
@@ -34,127 +35,225 @@ const contactMethods = [
     detail: 'Check out my repos',
     href: 'https://github.com/hariharan440',
     icon: FaGithub,
-    iconColor: 'text-gray-300 group-hover:text-white',
-    external: true
+    external: true,
+    isPrimary: false
   }
 ];
 
 const Contact = () => {
-  return (
-    <div className='max-w-[1200px] mx-auto py-12 md:py-20 px-4 sm:px-6 font-sans relative overflow-hidden' id='contact'>
-      
-      {/* Background decoration */}
-      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-[#3F2B96] rounded-full mix-blend-screen filter blur-[150px] opacity-10 pointer-events-none"></div>
+  const [copied, setCopied] = useState(false);
 
-      <div className='text-center mb-8 md:mb-12 relative z-10'>
-        <p className='text-xs sm:text-sm text-[#a855f7] uppercase tracking-widest font-bold mb-1.5 md:mb-2'>Get In Touch</p>
-        <h2 className='text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-white mb-3'>
-          Let's Build <span className='text-transparent bg-clip-text bg-gradient-to-r from-[#3F2B96] to-[#a855f7]'>Together</span>
+  const handleCopyEmail = (e, email) => {
+    e.preventDefault();
+    e.stopPropagation();
+    navigator.clipboard.writeText(email);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  return (
+    <section
+      id="contact"
+      className="max-w-7xl mx-auto py-20 md:py-28 px-4 sm:px-6 lg:px-8 relative overflow-hidden text-[#f4f4f6]"
+      style={{ fontFamily: '"Plus Jakarta Sans", system-ui, -apple-system, sans-serif' }}
+    >
+      {/* Ambient Background Radial Glows (Obsidian + Emerald Theme) */}
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[650px] bg-emerald-500/[0.06] rounded-full blur-[150px] pointer-events-none"></div>
+      <div className="absolute bottom-10 right-10 w-[450px] h-[450px] bg-emerald-600/[0.03] rounded-full blur-[130px] pointer-events-none"></div>
+
+      {/* Subtle Architectural Dot Grid Overlay */}
+      <div
+        className="absolute inset-0 opacity-[0.12] pointer-events-none"
+        style={{
+          backgroundImage: 'radial-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px)',
+          backgroundSize: '24px 24px',
+          maskImage: 'radial-gradient(ellipse 70% 60% at 50% 40%, black 70%, transparent 100%)',
+          WebkitMaskImage: 'radial-gradient(ellipse 70% 60% at 50% 40%, black 70%, transparent 100%)'
+        }}
+      ></div>
+
+      <div className="text-center mb-10 md:mb-14 relative z-10 flex flex-col items-center">
+        {/* Eyebrow Pill */}
+        <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.03] border border-white/[0.08] text-xs font-mono uppercase tracking-wider text-emerald-400 mb-4 shadow-[inset_0_1px_0_rgba(255,255,255,0.06)]">
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          {"// GET IN TOUCH"}
+        </span>
+
+        {/* Section Headline */}
+        <h2 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tighter leading-[1.08] text-zinc-100 mb-4">
+          Let's Build{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-200">
+            Together
+          </span>
         </h2>
 
         {/* Location & Immediate Availability Banner */}
-        <div className="inline-flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm text-gray-300 bg-[#141414]/90 border border-gray-800/90 px-4 py-1.5 rounded-full mb-3.5 shadow-sm backdrop-blur-sm">
-          <span className="flex items-center gap-1.5 font-medium text-white">
-            <span className="text-purple-400">📍</span> Deira, Dubai, UAE
+        <div className="inline-flex flex-wrap items-center justify-center gap-2 text-xs sm:text-sm text-zinc-300 bg-white/[0.03] border border-white/[0.08] px-4 py-1.5 rounded-full mb-3.5 shadow-sm backdrop-blur-md">
+          <span className="flex items-center gap-1.5 font-medium text-zinc-200">
+            <span className="text-emerald-400">📍</span> Deira, Dubai, UAE
           </span>
-          <span className="text-gray-600 hidden sm:inline">•</span>
-          <span className="text-purple-300 font-medium">
+          <span className="text-zinc-600 hidden sm:inline">•</span>
+          <span className="text-emerald-300 font-semibold bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-0.5 rounded-full text-[11px] sm:text-xs">
             Visit Visa
           </span>
-          <span className="text-gray-600 hidden sm:inline">•</span>
+          <span className="text-zinc-600 hidden sm:inline">•</span>
           <span className="inline-flex items-center gap-1.5 text-emerald-400 font-medium">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_rgba(52,211,153,0.8)]"></span>
             Available for Immediate Joining
           </span>
         </div>
 
-        <p className="mt-1 text-gray-400 max-w-xl mx-auto text-sm sm:text-base leading-relaxed px-2">
+        <p className="mt-1 text-zinc-400 max-w-xl mx-auto text-sm sm:text-base leading-relaxed px-2 font-normal">
           Ready for in-person interviews and employment visa transfer across the UAE.
         </p>
       </div>
 
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6 max-w-[1100px] mx-auto relative z-10'>
+      {/* 4 Contact Cards (Double-Bezel Glassmorphic Grid from new.md) */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 max-w-[1200px] mx-auto relative z-10">
         {contactMethods.map((item) => {
           const Icon = item.icon;
+          const isEmail = item.id === 'email';
+
           return (
-            <a 
+            <div
               key={item.id}
-              href={item.href}
-              target={item.external ? "_blank" : undefined}
-              rel={item.external ? "noopener noreferrer" : undefined}
-              className="group relative bg-[#111]/90 backdrop-blur-lg border border-gray-800 rounded-xl sm:rounded-2xl lg:rounded-3xl p-3.5 sm:p-5 lg:p-6 flex flex-row sm:flex-col items-center sm:justify-center gap-3.5 sm:gap-4 hover:-translate-y-1 sm:hover:-translate-y-2 hover:border-[#3F2B96] hover:shadow-[0_10px_30px_rgba(63,43,150,0.15)] transition-all duration-300 overflow-hidden"
+              className={`p-1 rounded-[1.75rem] transition-all duration-300 hover:-translate-y-1.5 flex flex-col ${
+                item.isPrimary
+                  ? 'bg-gradient-to-b from-emerald-500/25 via-white/[0.04] to-white/[0.02] border border-emerald-500/35 shadow-[0_16px_40px_-10px_rgba(16,185,129,0.18)]'
+                  : 'bg-gradient-to-b from-white/[0.08] via-white/[0.03] to-white/[0.01] border border-white/[0.08] shadow-[0_16px_40px_rgba(0,0,0,0.5)]'
+              }`}
             >
-              <div className="absolute inset-0 bg-gradient-to-b from-[#3F2B96]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+              <div className="rounded-[1.5rem] bg-[#111115] border border-white/[0.06] p-5 sm:p-6 flex flex-col justify-between h-full group relative overflow-hidden">
+                {/* Ambient Top Glow on Hover */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
 
-              {/* Icon Container */}
-              <div className="w-11 h-11 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-xl sm:rounded-2xl bg-[#1e1e1e] border border-gray-700/70 flex items-center justify-center shrink-0 group-hover:scale-105 sm:group-hover:scale-110 group-hover:border-[#3F2B96] group-hover:bg-[#3F2B96]/20 transition-all duration-300 shadow-md">
-                <Icon className={`text-xl sm:text-2xl lg:text-3xl ${item.iconColor} transition-colors`} />
-              </div>
+                <div>
+                  {/* Top Header Row with Icon & Action Arrow */}
+                  <div className="flex items-center justify-between mb-4">
+                    <div
+                      className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300 ${
+                        item.isPrimary
+                          ? 'bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 group-hover:scale-105 shadow-[0_0_12px_rgba(16,185,129,0.25)]'
+                          : 'bg-white/[0.04] border border-white/[0.08] text-zinc-300 group-hover:text-emerald-400 group-hover:border-emerald-500/30 group-hover:bg-white/[0.08]'
+                      }`}
+                    >
+                      <Icon size={20} />
+                    </div>
 
-              {/* Text content */}
-              <div className="flex-1 sm:flex-initial text-left sm:text-center relative z-10 min-w-0">
-                <div className="flex items-center gap-1.5 sm:justify-center mb-0.5 sm:mb-1">
-                  <h3 className="text-sm sm:text-base lg:text-lg font-bold text-white group-hover:text-purple-300 transition-colors truncate">
-                    {item.title}
-                  </h3>
-                  {item.badge && (
-                    <span className="text-[10px] text-emerald-400 bg-emerald-950/60 border border-emerald-800/60 px-1.5 py-0.5 rounded font-medium">
-                      {item.badge}
-                    </span>
+                    <a
+                      href={item.href}
+                      target={item.external ? "_blank" : undefined}
+                      rel={item.external ? "noopener noreferrer" : undefined}
+                      className="w-8 h-8 rounded-full bg-white/[0.03] border border-white/[0.08] group-hover:bg-emerald-500 group-hover:text-zinc-950 text-zinc-400 flex items-center justify-center transition-all duration-200 cursor-pointer"
+                      aria-label={item.title}
+                    >
+                      <FiArrowUpRight size={15} className="stroke-[2.5]" />
+                    </a>
+                  </div>
+
+                  {/* Title & Badge */}
+                  <div className="flex items-center gap-2 mb-1.5">
+                    <h3 className="text-base sm:text-lg font-bold text-zinc-100 group-hover:text-white transition-colors">
+                      {item.title}
+                    </h3>
+                    {item.badge && (
+                      <span className="text-[10px] font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/25 px-2 py-0.5 rounded-full font-medium">
+                        {item.badge}
+                      </span>
+                    )}
+                  </div>
+
+                  {/* Detail */}
+                  <p className="text-zinc-400 text-xs sm:text-sm font-mono break-all line-clamp-2">
+                    {item.detail}
+                  </p>
+                </div>
+
+                {/* Bottom Interactive Actions */}
+                <div className="mt-5 pt-3.5 border-t border-white/[0.06] flex items-center justify-between text-xs">
+                  {isEmail ? (
+                    <button
+                      onClick={(e) => handleCopyEmail(e, item.detail)}
+                      className="w-full py-2 px-3 rounded-xl bg-white/[0.03] hover:bg-emerald-500/15 border border-white/[0.08] hover:border-emerald-500/30 text-zinc-300 hover:text-emerald-300 transition-all duration-200 flex items-center justify-center gap-1.5 font-mono text-[11px] cursor-pointer"
+                    >
+                      {copied ? (
+                        <>
+                          <FiCheck size={13} className="text-emerald-400" />
+                          <span className="text-emerald-400 font-semibold">Address Copied!</span>
+                        </>
+                      ) : (
+                        <>
+                          <FiCopy size={13} />
+                          <span>Copy Address</span>
+                        </>
+                      )}
+                    </button>
+                  ) : (
+                    <a
+                      href={item.href}
+                      target={item.external ? "_blank" : undefined}
+                      rel={item.external ? "noopener noreferrer" : undefined}
+                      className="w-full py-2 px-3 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] border border-white/[0.08] hover:border-white/[0.15] text-zinc-400 hover:text-zinc-100 transition-all duration-200 flex items-center justify-center gap-1.5 font-mono text-[11px] cursor-pointer"
+                    >
+                      <span>Open Link</span>
+                      <FiArrowUpRight size={12} />
+                    </a>
                   )}
                 </div>
-                <p className="text-gray-400 text-xs sm:text-xs lg:text-sm truncate sm:whitespace-normal">
-                  {item.detail}
-                </p>
               </div>
-
-              {/* Mobile Right Arrow */}
-              <div className="sm:hidden text-gray-600 group-hover:text-purple-400 group-hover:translate-x-1 transition-all shrink-0 pr-1">
-                <FaArrowRight size={13} />
-              </div>
-            </a>
+            </div>
           );
         })}
       </div>
 
-      {/* Recruiter Quick Verification Card */}
-      <div className="mt-8 sm:mt-10 max-w-[1100px] mx-auto bg-gradient-to-r from-[#141414] via-[#101010] to-[#141414] border border-gray-800/80 rounded-2xl p-4 sm:p-5 relative z-10 shadow-lg">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 text-center sm:text-left pb-3 mb-3 border-b border-gray-800/60">
-          <div>
-            <h4 className="text-xs sm:text-sm font-bold text-white uppercase tracking-wider flex items-center justify-center sm:justify-start gap-2">
-              <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
-              Recruiter & HR Verification Details
-            </h4>
-            <p className="text-[11px] sm:text-xs text-gray-400 mt-0.5">
-              Available for immediate visa transfer and in-person joining across the UAE
-            </p>
+      {/* Recruiter Quick Verification Card (from new.md System Card Architecture) */}
+      <div className="mt-10 sm:mt-12 max-w-[1200px] mx-auto p-1 rounded-[1.75rem] bg-gradient-to-b from-white/[0.06] via-white/[0.02] to-transparent border border-white/[0.08] shadow-[0_16px_40px_rgba(0,0,0,0.4)] backdrop-blur-xl relative z-10">
+        <div className="rounded-[1.5rem] bg-[#111115] border border-white/[0.06] p-5 sm:p-7">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-center sm:text-left pb-4 mb-4 border-b border-white/[0.06]">
+            <div>
+              <h4 className="text-xs sm:text-sm font-bold text-zinc-100 uppercase font-mono tracking-wider flex items-center justify-center sm:justify-start gap-2">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Recruiter & HR Verification Details
+              </h4>
+              <p className="text-[11px] sm:text-xs text-zinc-400 mt-1">
+                Available for immediate visa transfer and in-person joining across the UAE
+              </p>
+            </div>
+            <span className="self-center sm:self-auto inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-3.5 py-1 rounded-full shadow-[0_0_12px_rgba(16,185,129,0.15)] font-mono">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              Ready to Join
+            </span>
           </div>
-          <span className="self-center sm:self-auto inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 bg-emerald-950/40 border border-emerald-800/50 px-3 py-1 rounded-full">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-            Ready to Join
-          </span>
-        </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-4 text-left">
-          <div className="bg-[#181818]/70 border border-gray-800/60 rounded-xl p-2.5 sm:p-3">
-            <span className="text-[10px] sm:text-[11px] text-gray-500 uppercase font-semibold block mb-0.5">Date of Birth</span>
-            <span className="text-xs sm:text-sm font-bold text-white font-mono">25/11/2002</span>
-          </div>
-          <div className="bg-[#181818]/70 border border-gray-800/60 rounded-xl p-2.5 sm:p-3">
-            <span className="text-[10px] sm:text-[11px] text-gray-500 uppercase font-semibold block mb-0.5">Passport Number</span>
-            <span className="text-xs sm:text-sm font-bold text-white font-mono tracking-wider">BD690767</span>
-          </div>
-          <div className="bg-[#181818]/70 border border-gray-800/60 rounded-xl p-2.5 sm:p-3">
-            <span className="text-[10px] sm:text-[11px] text-gray-500 uppercase font-semibold block mb-0.5">Passport Expiry</span>
-            <span className="text-xs sm:text-sm font-bold text-gray-200 font-mono">28/09/2036</span>
-          </div>
-          <div className="bg-[#181818]/70 border border-gray-800/60 rounded-xl p-2.5 sm:p-3">
-            <span className="text-[10px] sm:text-[11px] text-gray-500 uppercase font-semibold block mb-0.5">Visa Status</span>
-            <span className="text-xs sm:text-sm font-bold text-purple-300">Visit Visa</span>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 text-left">
+            <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-3 sm:p-3.5">
+              <span className="text-[10px] sm:text-[11px] text-zinc-500 uppercase font-mono font-medium block mb-1">
+                Date of Birth
+              </span>
+              <span className="text-xs sm:text-sm font-bold text-zinc-100 font-mono">25/11/2002</span>
+            </div>
+            <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-3 sm:p-3.5">
+              <span className="text-[10px] sm:text-[11px] text-zinc-500 uppercase font-mono font-medium block mb-1">
+                Passport Number
+              </span>
+              <span className="text-xs sm:text-sm font-bold text-zinc-100 font-mono tracking-wider">BD690767</span>
+            </div>
+            <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-3 sm:p-3.5">
+              <span className="text-[10px] sm:text-[11px] text-zinc-500 uppercase font-mono font-medium block mb-1">
+                Passport Expiry
+              </span>
+              <span className="text-xs sm:text-sm font-bold text-zinc-300 font-mono">28/09/2036</span>
+            </div>
+            <div className="bg-white/[0.02] border border-white/[0.06] rounded-xl p-3 sm:p-3.5">
+              <span className="text-[10px] sm:text-[11px] text-zinc-500 uppercase font-mono font-medium block mb-1">
+                Visa Status
+              </span>
+              <span className="text-xs sm:text-sm font-bold text-emerald-400 font-mono">Visit Visa</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
