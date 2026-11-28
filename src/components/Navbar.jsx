@@ -49,7 +49,7 @@ const Navbar = () => {
 
     return (
         <header
-            className="sticky top-3 z-50 w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto pointer-events-none transition-all duration-300"
+            className="sticky top-3 z-50 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pointer-events-none transition-all duration-300"
             style={{ fontFamily: '"Plus Jakarta Sans", system-ui, -apple-system, sans-serif' }}
         >
             <nav className="pointer-events-auto bg-[#0e0e12]/80 backdrop-blur-xl border border-white/[0.08] rounded-2xl py-2.5 px-3 sm:px-4 shadow-[0_8px_32px_rgba(0,0,0,0.5),inset_0_1px_0_rgba(255,255,255,0.08)] flex items-center justify-between relative transition-all duration-300">

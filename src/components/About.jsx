@@ -74,17 +74,17 @@ const About = () => {
                             <div className="rounded-[1.75rem] bg-[#111115] border border-white/[0.06] p-6 sm:p-8 flex flex-col">
                                 {/* Terminal Title Bar */}
                                 <div className="flex items-center justify-between pb-4 mb-6 border-b border-white/[0.06] text-xs font-mono">
-                                    <div className="flex items-center gap-2">
-                                        <div className="flex items-center gap-1.5 mr-2">
+                                    <div className="flex items-center gap-2 min-w-0 flex-1 mr-2">
+                                        <div className="flex items-center gap-1.5 mr-2 shrink-0">
                                             <span className="w-3 h-3 rounded-full bg-red-500/80"></span>
                                             <span className="w-3 h-3 rounded-full bg-yellow-500/80"></span>
                                             <span className="w-3 h-3 rounded-full bg-green-500/80"></span>
                                         </div>
-                                        <span className="text-zinc-400 font-medium">
+                                        <span className="text-zinc-400 font-medium truncate">
                                             sys://identity/hariharan_anantharaj.md
                                         </span>
                                     </div>
-                                    <span className="inline-flex items-center gap-1.5 text-[10px] font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-2.5 py-0.5 rounded-full">
+                                    <span className="inline-flex items-center gap-1.5 text-[10px] font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-2.5 py-0.5 rounded-full shrink-0">
                                         <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
                                         STATUS: ONLINE
                                     </span>

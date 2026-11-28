@@ -334,7 +334,7 @@ const Hero = () => {
             </div>
 
             {/* Seamless Infinite Horizontal Tech Stack Marquee (from view.md) */}
-            <div className="relative z-10 w-full mt-12 sm:mt-16 pt-8 border-t border-white/[0.06]">
+            <div className="relative z-10 w-full mt-12 sm:mt-16 pt-8 border-t border-white/[0.06] overflow-hidden">
                 <div
                     className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden"
                     style={{

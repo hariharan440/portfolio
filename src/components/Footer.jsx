@@ -352,8 +352,8 @@ const Footer = () => {
                 >
                     <canvas
                         ref={canvasRef}
-                        className="w-full block mx-auto"
-                        style={{ height: '220px' }}
+                        className="w-full max-w-full block mx-auto"
+                        style={{ height: '220px', maxWidth: '100%' }}
                     />
                     <div className="text-center mt-1">
                         <span className="text-[10px] font-mono tracking-widest uppercase text-zinc-600">

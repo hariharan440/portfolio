@@ -17,8 +17,7 @@ import ProjectDetails from './components/ProjectDetails';
 function App() {
   return (
     <Router>
-      <div>
-
+      <div className="relative w-full min-h-screen bg-[#09090b] text-[#f4f4f6] overflow-x-hidden">
         <Routes>
           <Route path="/" element={<>
             <Navbar />

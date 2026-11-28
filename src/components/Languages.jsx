@@ -35,7 +35,7 @@ const Languages = () => {
   return (
     <section
       id="languages"
-      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-16 md:my-24 font-sans relative text-[#f4f4f6]"
+      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-16 md:my-24 font-sans relative text-[#f4f4f6] overflow-hidden"
       style={{ fontFamily: '"Plus Jakarta Sans", system-ui, -apple-system, sans-serif' }}
     >
       {/* Ambient Radial Glow */}
